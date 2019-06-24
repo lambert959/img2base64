@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="src/img2base64.js"></script>
+	<script>
+		var promis = img2base64.getVideoBase64('http://localhost:8090/GitHubResp/img2base64/static/sb.mp4', {size: 0.3, quality: 0.1})
+		promis.then((data) => {
+			console.info(data)
+		})
+	</script>
+</body>
+</html>
