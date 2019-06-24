@@ -1,6 +1,6 @@
 {
-  "name": "img2base64",
-  "version": "1.0.1",
+  "name": "base64thumbnail",
+  "version": "1.0.0",
   "description": "a tool transfrom img to base64",
   "main": "src/timeutil",
   "scripts": {

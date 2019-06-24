@@ -1,6 +1,6 @@
 import EXIF from 'exif';
 
-var img2base64 = {
+var base64thumbnail = {
     option: {
         quality: 1,
         size: 1
@@ -68,4 +68,4 @@ var img2base64 = {
     }
 }
 
-export default img2base64
+export default base64thumbnail
