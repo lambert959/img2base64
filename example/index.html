@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="../lib/base64thumbnail.js"></script>
+	<script>
+		var promis = base64img('http://localhost:8090/GitHubResp/img2base64/static/avatar.jpg')
+		promis.then((data) => {
+			console.info(data)
+		})
+	</script>
+</body>
+</html>

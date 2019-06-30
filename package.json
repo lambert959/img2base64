@@ -1,15 +1,24 @@
 {
   "name": "base64thumbnail",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "a tool transfrom img to base64",
-  "main": "src/timeutil",
+  "main": "lib/base64img",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
   },
   "keywords": [],
   "author": "canduzhang",
   "license": "MIT",
-  "dependencies": {
-    "exif": "^0.6.0"
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
   }
 }
